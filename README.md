@@ -1,6 +1,6 @@
 # Neuron Dental Care
 
-Project Live Site Link [Neuron Dental Care](https://react-firebase-4279d.web.app/).
+Project Live Site Link [BlueSky Tour Hub](https://react-firebase-4279d.web.app/).
 
 ## Bullet Point of this Project
 1. This project is fully based on React Library

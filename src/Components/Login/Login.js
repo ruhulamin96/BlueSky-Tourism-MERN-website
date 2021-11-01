@@ -21,7 +21,7 @@ function Login() {
         setUsers(result.user);
         history.push(redirect_url);
 
-        // console.log(result.user);
+        console.log(result);
       })
       .finally(() => setIsloding(false));
   };

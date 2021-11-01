@@ -5,7 +5,7 @@ function MeetDoctor() {
   const [visaservices, setVisaServices] = useState([]);
   const [isloading, setIsloading] = useState(true);
   useEffect(() => {
-    axios.get("http://localhost:5000/visaservices").then((res) => {
+    axios.get("https://howling-ghost-03895.herokuapp.com/visaservices").then((res) => {
       setVisaServices(res.data);
       setIsloading(false);
     });

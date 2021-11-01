@@ -7,7 +7,7 @@ function ManageOrder() {
   const [myOrder, setMyOrder] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/orders").then((res) => {
+    axios.get("https://howling-ghost-03895.herokuapp.com/orders").then((res) => {
       setMyOrder(res.data)
     });
   }, []);
@@ -15,7 +15,7 @@ function ManageOrder() {
   const handleCancelBooking = (id) => {
     const confirm = window.confirm("Would You Like to Cancel Booking");
     if (confirm) {
-      axios.delete(`http://localhost:5000/orders/${id}`).then((res) => {
+      axios.delete(`https://howling-ghost-03895.herokuapp.com/orders/${id}`).then((res) => {
         //if you re render front end after delete. u can also use above dependancy in useEffect()
         if (res.data.deletedCount === 1) {
           const newOrder = myOrder.filter((order) => order._id !== id);
@@ -27,11 +27,11 @@ function ManageOrder() {
   };
 
   const handleStatus=(id)=>{
-    axios.put(`http://localhost:5000/orders/${id}`)
+    axios.put(`https://howling-ghost-03895.herokuapp.com/orders/${id}`)
     .then(res=>{
      if(res.data.modifiedCount>0){
        alert('Approved Booking Successfully !!');
-       axios.get("http://localhost:5000/orders").then((res) => {
+       axios.get("https://howling-ghost-03895.herokuapp.com/orders").then((res) => {
          setMyOrder(res.data)
        });
      }

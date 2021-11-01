@@ -8,7 +8,7 @@ function Contact() {
    const [myOrder, setMyOrder]=useState([])
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/orders')
+    axios.get('https://howling-ghost-03895.herokuapp.com/orders')
     .then(res=>{ 
       const filterMyOrder=res.data.filter(filterMyOrder=>filterMyOrder.email===users.email
         );
@@ -21,7 +21,7 @@ function Contact() {
     const confirm=window.confirm("Would You Like to Cancel Booking");
     if(confirm){
       
-    axios.delete(`http://localhost:5000/orders/${id}`)
+    axios.delete(`https://howling-ghost-03895.herokuapp.com/orders/${id}`)
     .then(res=>{
       //if you re render front end after delete. u can also use above dependancy in useEffect()
     if(res.data.deletedCount===1){

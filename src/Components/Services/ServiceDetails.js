@@ -15,7 +15,7 @@ function ServiceDetails() {
   const { serviceId } = useParams();
   const [services, setServices] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/services`)
+    fetch(`https://howling-ghost-03895.herokuapp.com/services`)
       .then((res) => res.json())
       .then((data) => {
         const filterService = data.filter((value) => value._id === serviceId);
@@ -28,7 +28,7 @@ function ServiceDetails() {
   const onSubmit = (data) => {
     const price = priceRef.current.value;
     const newData = { ...data, place: placeRef.current.value, price: price, status:false};
-    axios.post("http://localhost:5000/orders", newData).then((res) => {
+    axios.post("https://howling-ghost-03895.herokuapp.com/orders", newData).then((res) => {
       alert("Booking Successful !!!");
 
       reset();
