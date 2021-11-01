@@ -10,7 +10,9 @@ function Navbar() {
         <div className="row ">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <Link class="navbar-brand" to="/">
-              <h3 className="text-primary">Neuron <br /> Dental Care</h3>
+              <h3 className="text-primary">
+                BlueSky <br /> Tour Hub
+              </h3>
             </Link>
             <button
               class="navbar-toggler"
@@ -33,17 +35,17 @@ function Navbar() {
                 </li>
                 <li class="nav-item active">
                   <Link class="nav-link" to="/about">
-                    About Us
+                    Add Service
                   </Link>
                 </li>
                 <li class="nav-item active">
-                  <Link class="nav-link" to="/services">
-                    Services
+                  <Link class="nav-link" to="/allorders">
+                    Manage All Orders
                   </Link>
                 </li>
                 <li class="nav-item active">
                   <Link class="nav-link" to="/contact">
-                    Dental Tips
+                    My Orders
                   </Link>
                 </li>
                 <li class="nav-item active">

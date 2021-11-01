@@ -1,0 +1,25 @@
+.book-form-add-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px grey;
+  }
+  .book-form-add-service form, input{
+      width: 100%;
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      outline: 0;
+      padding-left: 10px;
+      border-radius: 0.6rem;
+  }
+  .book-form-add-service label{
+     font-size: 1.2rem;
+     color: blue;
+     font-weight: bold;
+     margin-top: 0.5rem;
+  }
+  

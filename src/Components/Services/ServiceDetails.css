@@ -1,0 +1,24 @@
+.book-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  box-shadow: 0px 0px 10px grey;
+}
+.book-form form, input{
+    width: 100%;
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    outline: 0;
+    border-radius: 0.6rem;
+}
+.book-form label{
+   font-size: 1.2rem;
+   color: blue;
+   font-weight: bold;
+   margin-top: 0.2rem;
+}

@@ -12,6 +12,7 @@ import PrivateRoute from "./Components/Login/PrivateRoute/PrivateRoute";
 import NotFound from "./Components/NotFound/NotFound";
 import Navbar from './Components/Navbar/Navbar'
 import Footer from "./Components/Footer/Footer";
+import ManageOrder from "./Components/ManageOrder/ManageOrder";
 
 function App() {
   return (
@@ -35,13 +36,12 @@ function App() {
               <About></About>
               <Footer></Footer>
             </PrivateRoute>
-            <Route exact path="/services">
+            <PrivateRoute exact path="/allorders">
             <Navbar></Navbar>
-              <Services></Services>
+              <ManageOrder></ManageOrder>
               <Footer></Footer>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute exact path="/service/:serviceId">
-            
               <ServiceDetails></ServiceDetails>
               <Footer></Footer>
             </PrivateRoute>
@@ -50,11 +50,7 @@ function App() {
               <Login></Login>
               <Footer></Footer>
             </Route>
-            <Route exact path="/register">
-            <Navbar></Navbar>
-              <Register></Register>
-              <Footer></Footer>
-            </Route>
+            
             <PrivateRoute exact path="/contact">
             <Navbar></Navbar>
               <Contact></Contact>

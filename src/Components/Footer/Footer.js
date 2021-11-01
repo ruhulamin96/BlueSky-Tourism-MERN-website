@@ -20,11 +20,11 @@ function Footer() {
             </div>
           </div>
           <div className="col-md-4 text-center">
-            <h2>More Teeth Services</h2>
-            <p>Teeth Root Canel</p>
-            <p>Scaling Teeth</p>
-            <p>Vanier Scaling</p>
-            <p>Cleansing Teeth</p>
+            <h2>More Visa Offers</h2>
+            <p>Canada Visa</p>
+            <p>Spain Visa</p>
+            <p>Turkey Visa</p>
+            <p>Stuent Visa</p>
           </div>
           <div className="col-md-4 text-center">
             <h2>Follow Us</h2>
@@ -36,7 +36,7 @@ function Footer() {
               <i className="fab fa-pinterest fs-4 mt-3"></i>
             </div>
           </div>
-          <p className="text-center bg-danger text-white">&copy;2021 All Right Reserved</p>
+          <p className="text-center bg-primary rounded fw-bold text-white">&copy;2021 All Right Reserved</p>
         </div>
       </div>
     </div>

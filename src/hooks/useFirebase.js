@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import {
   getAuth,
   signInWithPopup,
-  GithubAuthProvider,
+  GoogleAuthProvider,
   signOut,
   onAuthStateChanged,
   createUserWithEmailAndPassword,
@@ -21,7 +21,7 @@ const useFirebase = () => {
   const auth = getAuth();
   const googleSignIn = () => {
     setIsloding(true);
-    const googleProvider = new GithubAuthProvider ();
+    const googleProvider = new GoogleAuthProvider ();
     return signInWithPopup(auth, googleProvider)
       
   };
@@ -54,9 +54,10 @@ const useFirebase = () => {
     createUserWithEmailAndPassword(auth, email, password).then(
       (result) => {
         const user = result.user; 
-        console.log(user);
+        // console.log(user);
         updateProfile(auth.currentUser, {
             displayName: name,
+           
           }).then(() => {
             
           }).catch((error) => {
