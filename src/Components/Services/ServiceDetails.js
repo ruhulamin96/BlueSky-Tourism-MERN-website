@@ -30,7 +30,6 @@ function ServiceDetails() {
     const newData = { ...data, place: placeRef.current.value, price: price, status:false};
     axios.post("https://howling-ghost-03895.herokuapp.com/orders", newData).then((res) => {
       alert("Booking Successful !!!");
-
       reset();
       history.goBack();
     });

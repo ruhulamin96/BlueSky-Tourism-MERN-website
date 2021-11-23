@@ -20,7 +20,6 @@ function Contact() {
   const handleCancelBooking=(id)=>{
     const confirm=window.confirm("Would You Like to Cancel Booking");
     if(confirm){
-      
     axios.delete(`https://howling-ghost-03895.herokuapp.com/orders/${id}`)
     .then(res=>{
       //if you re render front end after delete. u can also use above dependancy in useEffect()

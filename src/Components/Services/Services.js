@@ -6,6 +6,7 @@ import "./Services.css";
 function Services() {
   const [services, setServices] = useState([]);
   const [isLoading, setIsloading] = useState(true);
+  
   useEffect(() => {
     fetch("https://howling-ghost-03895.herokuapp.com/services")
       .then((res) => res.json())
@@ -14,6 +15,7 @@ function Services() {
         setIsloading(false);
       });
   }, []);
+
   console.log(" from services", services);
   return (
     <div>
