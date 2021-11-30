@@ -1,6 +1,6 @@
 # BlueSky Tour Hub
 
-Project Live Site Link [BlueSky Tour Hub](https://bluesky-tour-hub.web.app/home).
+Project Live Site Link [BlueSky Tour Hub](https://bluesky-tour-hub.web.app/).
 
 ## Bullet Point of this Project
 
