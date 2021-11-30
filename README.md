@@ -1,6 +1,6 @@
 # BlueSky Tour Hub
 
-Project Live Site Link [BlueSky Tour Hub](https://react-firebase-4279d.web.app/).
+Project Live Site Link [BlueSky Tour Hub](https://bluesky-tour-hub.web.app/home).
 
 ## Bullet Point of this Project
 
